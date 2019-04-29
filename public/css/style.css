@@ -3,6 +3,11 @@ body{
     background-size: cover no-repeat;
 }
 
+h1, h2{
+    font-family: 'Raleway', sans-serif;
+
+}
+
 .container{
     border-radius: 1rem;
 }
@@ -16,4 +21,8 @@ body{
     background-color: #0082b2;
     border-radius: 1rem;
     border: 0px;
+}
+#coloricon{
+    margin-bottom: 1rem;
+    width: 8rem;
 }
