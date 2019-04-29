@@ -4,7 +4,7 @@
     padding-top: 1em;
     margin-bottom:0;
     color: #eaeaea;
-    text-shadow: 1px 1px #303841;
+    text-shadow: 1px 1px 4px #303841;
     max-width: 100%;
 }
 .navigation{
@@ -19,14 +19,14 @@
     transition: 600ms;
     background-color: #00adb5;
     border-radius: 3rem;
-    text-shadow: 1px 1px #303841; 
+    text-shadow: 1px 1px 3px #303841; 
 }
 
 #tryagain{
     font-weight: 900;
     font-family: 'Maven Pro', sans-serif;
     color: #00adb5;
-    text-shadow: 1px 1px #303841;
+    text-shadow: 1px 1px 3px #303841;
 }
 
 body{
