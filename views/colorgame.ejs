@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="css/colorgame.css">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,900" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script defer src="js/colorgame.js"></script>
+    <title>Encontre a cor!</title>
+    
+</head>
+
+<body>
+    
+    <section id="gameheader" class="jumbotron text-center">
+        <h1 class="display-4">ENCONTRE</h1>
+        <h1 class="display-5 pickedcolorh1"></h1>
+        <h1 class="display-4">A COR</h1>
+    </section>
+
+    <div class="container-fluid navigation">
+        <div class="container">
+            <div class="row flex text-center">
+                <div class="col">
+                    <button id="newcolors" type="button" class="btn btn-default">NOVAS CORES</button>    
+                </div>   
+                <div class="col">
+                    <p id="tryagain"></p>
+                </div>   
+                <div class="col">
+                    <button id="easy" type="button" class="btn btn-default">FÁCIL</button>                
+                    <button id="hard" type="button" class="btn btn-default">DIFÍCIL</button>                
+                    <button id="howtoplay" type="button" class="btn btn-default" data-toggle="modal" data-target=".modal"><i class="fa fa-question-circle" aria-hidden="true"></i></button>
+                </div>   
+            </div>    
+        </div>
+    </div>    
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Como jogar?</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    Clique no quadrado colorido abaixo que seja o mesmo do código rgb do título!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container gamebg">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+    
+</body>
+
+</html>
