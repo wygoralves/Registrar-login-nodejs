@@ -26,25 +26,9 @@
     font-weight: 900;
     font-family: 'Maven Pro', sans-serif;
     color: #00adb5;
-    text-shadow: 1px 2px lightgrey;
+    text-shadow: 1px 1px #303841;
 }
-/* Hovers da navbar */
-/* #newcolors:hover{
-    background: lightblue;
-    color: whitesmoke;
-}
-#easy:hover{
-    background: lightblue;
-    color: whitesmoke;
-}
-#hard:hover{
-    background: lightblue;
-    color: whitesmoke;
-}
-.buttonactive{
-    background: lightblue;
-    color: whitesmoke;
-} */
+
 body{
     background: #303841;
 }
