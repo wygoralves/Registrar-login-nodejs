@@ -16,7 +16,7 @@ app.use(expressLayouts);
 app.set("view engine", "ejs");
 
 //Body Parser
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.urlencoded({extended: false}));
 
 //Rotas
 app.use("/", require("./routes/index"));

@@ -2,11 +2,12 @@
   <div class="col-md-6 m-auto">
     <div class="card card-body">
       <h1 class="text-center mb-3">
-        <i class="fas fa-user-plus"></i> Register
+        <i class="fas fa-user-plus"></i> Sign Up!
       </h1>
+      <% include ./partials/messages %>
       <form action="/users/register" method="POST">
         <div class="form-group">
-          <label for="name">Name</label>
+          <label for="name">Nome</label>
           <input
             type="name"
             id="name"
@@ -28,7 +29,7 @@
           />
         </div>
         <div class="form-group">
-          <label for="password">Password</label>
+          <label for="password">Senha</label>
           <input
             type="password"
             id="password"
@@ -39,7 +40,7 @@
           />
         </div>
         <div class="form-group">
-          <label for="password2">Confirm Password</label>
+          <label for="password2">Confirme sua senha</label>
           <input
             type="password"
             id="password2"
@@ -50,10 +51,10 @@
           />
         </div>
         <button type="submit" class="btn btn-primary btn-block">
-          Register
+          Sign Up!
         </button>
       </form>
-      <p class="lead mt-4">Have An Account? <a href="/users/login">Login</a></p>
+      <p class="lead mt-4">Já tem uma conta? <a href="/users/login">Login</a></p>
     </div>
   </div>
 </div>
