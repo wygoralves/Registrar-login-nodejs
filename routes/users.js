@@ -76,7 +76,7 @@ router.post("/register", function(req, res){
     }
 });
 
-//Manipulador de logins
+//Handler de logins
 router.post("/login", (req, res, next) =>{
     passport.authenticate("local", {
         successRedirect: "/dashboard",
@@ -85,10 +85,11 @@ router.post("/login", (req, res, next) =>{
     })(req, res, next);
 })
 
+//Handler de logout
 router.get("/logout", (req, res)=>{
     req.logout();
     req.flash("success_msg", "Você deslogou!");
-    res.redirect("users/login");
+    res.redirect("login");
 })
 
 module.exports = router;
