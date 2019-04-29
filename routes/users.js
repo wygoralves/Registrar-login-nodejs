@@ -69,9 +69,7 @@ router.post("/register", function(req, res){
                       })
                       .catch(err => console.log(err));
                 }))
-
                 console.log(newUser);
-                res.render("/login");
             }
         });
     }
