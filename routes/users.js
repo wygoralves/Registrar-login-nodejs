@@ -50,7 +50,28 @@ router.post("/register", function(req, res){
                     password2
                 });
             }else{
+                const newUser = new User({
+                    name,
+                    email,
+                    password
+                });
+                //Hash senha
+                bcrypt.genSalt(10, (err, salt)=> 
+                    bcrypt.hash(newUser.password, salt, (err, hash)=> {
+                      if(err) throw err;  
+                      //Transformar o password em hash
+                      newUser.password = hash;
+                      //Salvar o usuário no banco
+                      newUser.save()
+                      .then(user=>{
+                          req.flash("success_msg", "Você está registrado e pode logar!");
+                          res.redirect("login");
+                      })
+                      .catch(err => console.log(err));
+                }))
 
+                console.log(newUser);
+                res.render("/login");
             }
         });
     }
