@@ -79,7 +79,7 @@ router.post("/register", function(req, res){
 //Handler de logins
 router.post("/login", (req, res, next) =>{
     passport.authenticate("local", {
-        successRedirect: "/dashboard",
+        successRedirect: "/colorgame",
         failureRedirect: "/users/login",
         failureFlash: true
     })(req, res, next);
